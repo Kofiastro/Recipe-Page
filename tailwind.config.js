@@ -20,8 +20,8 @@ module.exports = {
       },
       fontFamily:{
         sans:['Young Serif', 'serif'],
-        
-      }
+        outfit:["Outfit", 'sans-serif'],
+      },
     },
   },
   plugins: [],
