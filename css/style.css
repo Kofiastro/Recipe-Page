@@ -876,6 +876,11 @@ video {
   color: rgb(51 65 85 / var(--tw-text-opacity));
 }
 
+.text-Eggshell {
+  --tw-text-opacity: 1;
+  color: hsl(30 54% 90% / var(--tw-text-opacity));
+}
+
 .marker\:font-medium *::marker {
   font-weight: 500;
 }
