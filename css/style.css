@@ -554,20 +554,47 @@ video {
   --tw-contain-style:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mx-12 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .flex {
   display: flex;
 }
 
-.h-dvh {
-  height: 100dvh;
+.table {
+  display: table;
 }
 
-.list-disc {
-  list-style-type: disc;
+.table-auto {
+  table-layout: auto;
+}
+
+.table-fixed {
+  table-layout: fixed;
 }
 
 .list-decimal {
   list-style-type: decimal;
+}
+
+.list-disc {
+  list-style-type: disc;
 }
 
 .flex-col {
@@ -586,10 +613,8 @@ video {
   justify-content: center;
 }
 
-.space-x-3 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+.justify-between {
+  justify-content: space-between;
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -610,12 +635,57 @@ video {
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
+.space-x-12 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(3rem * var(--tw-space-x-reverse));
+  margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-48 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(12rem * var(--tw-space-x-reverse));
+  margin-left: calc(12rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-12 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(3rem * var(--tw-space-y-reverse));
+}
+
+.space-y-48 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(12rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(12rem * var(--tw-space-y-reverse));
+}
+
+.divide-y > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+}
+
+.divide-Eggshell > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: hsl(30 54% 90% / var(--tw-divide-opacity));
+}
+
 .text-balance {
   text-wrap: balance;
 }
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.border-y-2 {
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+}
+
+.border-Eggshell {
+  --tw-border-opacity: 1;
+  border-color: hsl(30 54% 90% / var(--tw-border-opacity));
 }
 
 .bg-RoseWhite {
@@ -628,6 +698,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-DarkRaspberry {
+  --tw-bg-opacity: 1;
+  background-color: hsl(332 51% 32% / var(--tw-bg-opacity));
+}
+
 .p-6 {
   padding: 1.5rem;
 }
@@ -636,14 +711,105 @@ video {
   padding: 2rem;
 }
 
+.p-24 {
+  padding: 6rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
+}
+
+.p-12 {
+  padding: 3rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-.px-6 {
+.px-9 {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pl-6 {
   padding-left: 1.5rem;
-  padding-right: 1.5rem;
+}
+
+.pl-12 {
+  padding-left: 3rem;
+}
+
+.pr-32 {
+  padding-right: 8rem;
+}
+
+.pr-48 {
+  padding-right: 12rem;
+}
+
+.pr-24 {
+  padding-right: 6rem;
+}
+
+.pl-8 {
+  padding-left: 2rem;
+}
+
+.pr-8 {
+  padding-right: 2rem;
+}
+
+.pr-60 {
+  padding-right: 15rem;
+}
+
+.pl-7 {
+  padding-left: 1.75rem;
 }
 
 .text-left {
@@ -710,6 +876,30 @@ video {
   color: rgb(51 65 85 / var(--tw-text-opacity));
 }
 
+.marker\:font-medium *::marker {
+  font-weight: 500;
+}
+
+.marker\:text-DarkRaspberry *::marker {
+  color: hsl(332 51% 32% );
+}
+
+.marker\:text-Nutmeg *::marker {
+  color: hsl(14 45% 36% );
+}
+
+.marker\:font-medium::marker {
+  font-weight: 500;
+}
+
+.marker\:text-DarkRaspberry::marker {
+  color: hsl(332 51% 32% );
+}
+
+.marker\:text-Nutmeg::marker {
+  color: hsl(14 45% 36% );
+}
+
 @media (min-width: 1440px) {
   .md\:mx-80 {
     margin-left: 20rem;
@@ -719,19 +909,6 @@ video {
   .md\:my-28 {
     margin-top: 7rem;
     margin-bottom: 7rem;
-  }
-
-  .md\:my-32 {
-    margin-top: 8rem;
-    margin-bottom: 8rem;
-  }
-
-  .md\:max-w-md {
-    max-width: 28rem;
-  }
-
-  .md\:max-w-sm {
-    max-width: 24rem;
   }
 
   .md\:rounded-xl {
@@ -747,8 +924,19 @@ video {
     padding: 2.5rem;
   }
 
-  .md\:py-28 {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
+  .md\:pr-48 {
+    padding-right: 12rem;
+  }
+
+  .md\:pr-64 {
+    padding-right: 16rem;
+  }
+
+  .md\:pr-80 {
+    padding-right: 20rem;
+  }
+
+  .md\:pr-60 {
+    padding-right: 15rem;
   }
 }
